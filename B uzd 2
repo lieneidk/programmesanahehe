@@ -1,5 +1,5 @@
-//Dots naturāls skaitis n. Atrast visus tādu naturālu skaitļu trijniekus a, b, c , a <= b <= c <= n, lai a^2+b^2=c^2.
-//Risinājumā izmantot funkciju, kas par trīs skaitļiem noskaidro, vai tie atbilst nosacījumam.
+//Dots naturâls skaitis n. Atrast visus tâdu naturâlu skaitïu trijniekus a, b, c , a <= b <= c <= n, lai a^2+b^2=c^2.
+//Risinâjumâ izmantot funkciju, kas par trîs skaitïiem noskaidro, vai tie atbilst nosacîjumam.
 
 #include <iostream>
 
@@ -14,13 +14,11 @@ int a, b, c;
 cout<<"ievadi naturalu skaitli"<<endl;
 cin>>n;
 
-for(a=b, b>0, b--){
-        for(b=c, c>0, c--){
-             for(c=n, n>0, n--){
+for(c = 1; c<= n; c++){
+        for(b=1; b<=c; b++){
+             for(a=1; a<=b; a++){
                 if((a*a)+ (b*b) == (c*c)){
-        cout<<"skaitli atbilst nosacijumiem"<<endl;
-    }else{
-        cout<<"skaitli neatbilst nosacijumiem"<<endl;
+        cout<<a<<" "<<b<<" "<<c<<" "<<endl;
              }
 
         }
