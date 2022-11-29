@@ -6,17 +6,18 @@
 using namespace std;
 
 int main(void){
-
+// nosaka intigers un ludz lietotajam ievadit naturalu skaitli 
 int n;
 int a, b, c;
 
 
 cout<<"ievadi naturalu skaitli"<<endl;
 cin>>n;
-
+// pec ievadita skaitla, ar for cikliem katram intiger mekle vertibas, kas atbilstu sakaribai -  a <= b <= c <= n
 for(c = 1; c<= n; c++){
         for(b=1; b<=c; b++){
              for(a=1; a<=b; a++){
+//ar if pec tam parbauda vai trīs noteiktie skaitli atbilst nosacījumam - a^2+b^2=c^2
                 if((a*a)+ (b*b) == (c*c)){
         cout<<a<<" "<<b<<" "<<c<<" "<<endl;
              }
